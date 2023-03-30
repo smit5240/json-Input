@@ -1,0 +1,47 @@
+{
+    "id": 1000135000000025,
+    "name": "Prompt Testing",
+    "filter": {
+      "rules": [
+        {
+          "field": "1000135000000062__f",
+          "prompt": "Some Value",
+          "operator": "<",
+          "value": "xyz"
+        },
+        {
+          "field": "1000135000000060__f.1000135000000010__f",
+          "prompt": "Customer Number",
+          "operator": "=",
+          "value": "Cust_123"
+        },
+        {
+          "rules": [
+            {
+              "field": "1000135000000053__f",
+              "value": "USD",
+              "operator": "="
+            },
+            {
+              "rules": [
+                {
+                  "rules": [
+                    {
+                      "field": "1000135000000005__o.1000135000000079__f.1000135000000078__f",
+                      "prompt": "Unit Price Greater than",
+                      "operator": ">",
+                      "value": 23
+                    }
+                  ],
+                  "condition": "and"
+                }
+              ],
+              "condition": "and"
+            }
+          ],
+          "condition": "and"
+        }
+      ],
+      "condition": "and"
+    }
+}

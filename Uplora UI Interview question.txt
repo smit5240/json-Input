@@ -1,0 +1,12 @@
+1) Find out all fields that are prompt type from prompt_filter.json
+2) For all prompt fields from step 1 find out matching original field from all_fields.json
+3) Based on their data type display a HTML form, like text type will be text box, number type will be number and date type will be date.
+4) The prompt fields which are not filled by user, should be completely removed from the prompt_filter.json, if rule list is empty it should also be removed.
+5) prompt fields those are filled by user will contain the value:<value filled by user>.
+6) final JSON should be like final_out.json
+
+
+
+Notes:
+
+promt_filter.json is just one example. By keeping the structure and tags same, json can go to any nested hierarchy.
